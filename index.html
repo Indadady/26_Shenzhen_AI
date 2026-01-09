@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <!-- 🚨 Google Analytics (GA4) - Tourmaker 통합 관리 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLH9GD9SVR"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-JLH9GD9SVR');
     </script>
 
@@ -15,17 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 강원대학교 글로벌 패스파인더: Shenzhen & HK</title>
     
-    <!-- 🌟 카카오톡/SNS 공유 미리보기 (Open Graph) -->
     <meta property="og:image" content="https://images.unsplash.com/photo-1552912443-4dc97925e05c?q=80&w=1200&h=630&auto=format&fit=crop">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
     <meta property="og:title" content="[초청] 2026 강원대 글로벌 패스파인더: 심천 & 홍콩">
     <meta property="og:description" content="아시아의 실리콘밸리 심천과 글로벌 허브 홍콩의 혁신 현장. 4박 5일간의 여정을 미리 확인하세요.">
-    <meta property="og:type" content="website">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <style>
@@ -39,14 +31,12 @@
             background-attachment: fixed;
         } 
         
-        /* Nav & Tab Styles */
+        /* Interactive Elements */
         .nav-link { transition: all 0.3s; }
         .nav-link:hover, .nav-link.active { color: #0ea5e9; border-bottom-color: #0ea5e9; }
         
         .tab-btn { transition: all 0.3s; }
-        /* Active Tab Color */
         .tab-btn.active { background-color: #0369a1; color: white; border-color: #0369a1; }
-        .tab-btn.active .tab-desc { color: #e0f2fe; }
         
         html { scroll-behavior: smooth; }
         .hover-zoom { transition: transform 0.3s ease; }
@@ -72,26 +62,22 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header / Navigation -->
     <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0 flex items-center gap-3">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker Logo" class="h-8 w-auto">
-                    <!-- 1. D-Day Fallback & Safety -->
-                    <div id="d-day-badge" class="bg-sky-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-md animate-pulse">
+                    <div id="d-day-badge" class="bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-lg shadow-md animate-pulse">
                         D-?
                     </div>
                 </div>
                 
-                <!-- 5. Mobile Menu Expansion (Quick Links) -->
                 <div class="md:hidden flex space-x-4 text-xs font-bold text-slate-600">
-                    <a href="#timeline" class="hover:text-blue-600"><i class="fa-regular fa-calendar-check"></i> 일정</a>
-                    <a href="#checklist" class="hover:text-blue-600"><i class="fa-solid fa-list-check"></i> 체크</a>
-                    <a href="#mynote" class="text-yellow-600"><i class="fa-solid fa-pen-to-square"></i> 노트</a>
+                    <a href="#timeline" class="hover:text-blue-600"><i class="fa-solid fa-calendar-days"></i> 일정</a>
+                    <a href="#checklist" class="hover:text-emerald-600"><i class="fa-solid fa-check"></i> 체크</a>
+                    <a href="#mynote" class="text-yellow-600"><i class="fa-solid fa-pen"></i> 노트</a>
                 </div>
 
-                <!-- Desktop Nav -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4 text-sm font-medium">
                         <a href="#home" class="nav-link px-3 py-2 border-b-2 border-transparent active">소개</a>
@@ -106,13 +92,12 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero-bg-shenzhen text-white text-center flex items-center justify-center min-h-[85vh] relative">
             <div class="container mx-auto px-4 z-10">
                 <p class="text-lg md:text-xl font-semibold text-emerald-400 mb-2 tracking-widest uppercase">2026 KNU Global Pathfinder</p>
                 <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight drop-shadow-2xl">
                     SHENZHEN <span class="text-sky-400">&</span> HONG KONG<br>
-                    <span class="text-2xl md:text-4xl font-light text-slate-200 mt-2 block">GBA 혁신과 글로벌 I&T의 미래를 걷다</span>
+                    <span class="text-2xl md:text-4xl font-light text-slate-200 mt-2 block">GBA 혁신과 글로벌 I&T의 미래</span>
                 </h1>
                 
                 <div class="inline-block bg-white/95 p-4 rounded-xl shadow-lg mb-8 transform hover:scale-105 transition-transform">
@@ -138,67 +123,72 @@
             </div>
         </section>
 
-        <!-- Core Tech Highlights (6. Stable Images) -->
         <section id="highlight" class="py-20 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
                     <span class="text-emerald-600 font-bold tracking-wider uppercase">Innovation Ecosystem</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-2">심천·홍콩 혁신 클러스터 탐방</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2">심천·홍콩 혁신 클러스터</h2>
+                    <p class="text-slate-500 mt-2">이미지를 클릭하면 관련 현장 영상을 볼 수 있습니다.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    <!-- Card 1: Tencent -->
                     <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
-                        <div class="h-48 bg-slate-800 overflow-hidden relative">
-                            <!-- Stable Unsplash Image for Tech/Modern Building -->
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Tencent Concept" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="h-48 bg-slate-800 overflow-hidden relative cursor-pointer" onclick="playVideo(this, 'OKcdUT3ZSwA')" role="button" tabindex="0">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.kVGCvUE4oA3NQ61L9Cw0_gHaFj?w=474&h=379&c=7&p=0" alt="Tencent HQ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center play-overlay">
+                                <div class="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white play-icon">
+                                    <span class="text-white text-lg ml-1">▶</span>
+                                </div>
+                            </div>
                             <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
                                 <h3 class="text-xl font-bold text-white">Tencent (텐센트)</h3>
                             </div>
                         </div>
                         <div class="p-6">
-                            <p class="text-slate-600 text-sm mb-4">아시아 최대 테크 기업. 위챗(WeChat) 플랫폼 생태계와 AI 서비스 상용화 전략을 심천 본사에서 확인합니다.</p>
+                            <p class="text-slate-600 text-sm mb-4">아시아 최대 테크 기업. 위챗(WeChat) 생태계와 AI 전략을 심천 본사에서 확인합니다.</p>
                             <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">Platform</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">AI Tech</span>
                         </div>
                     </div>
 
-                    <!-- Card 2: DJI -->
                     <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
-                        <div class="h-48 bg-slate-800 overflow-hidden relative">
-                            <!-- Stable Unsplash Image for Drone/Tech -->
-                            <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070&auto=format&fit=crop" alt="Drone Tech" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="h-48 bg-slate-800 overflow-hidden relative cursor-pointer" onclick="playVideo(this, 'RGsa_bpkVpU')" role="button" tabindex="0">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.-aCdQviGwzJ3Gy9hQZVtqwHaFj?w=474&h=379&c=7&p=0" alt="DJI Sky City" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center play-overlay">
+                                <div class="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white play-icon">
+                                    <span class="text-white text-lg ml-1">▶</span>
+                                </div>
+                            </div>
                             <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
                                 <h3 class="text-xl font-bold text-white">DJI Sky City</h3>
                             </div>
                         </div>
                         <div class="p-6">
-                            <p class="text-slate-600 text-sm mb-4">세계 드론 시장 70% 점유. DJI의 혁신적인 신사옥과 로보틱스 산업의 미래를 조망합니다.</p>
+                            <p class="text-slate-600 text-sm mb-4">세계 드론 시장의 70%를 장악한 DJI. 로보틱스와 드론 산업의 미래를 조망합니다.</p>
                             <span class="bg-slate-200 text-slate-800 text-xs font-bold px-2 py-1 rounded">Robotics</span>
-                            <span class="bg-slate-200 text-slate-800 text-xs font-bold px-2 py-1 rounded">Drone</span>
                         </div>
                     </div>
 
-                    <!-- Card 3: HKSTP -->
                     <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
-                        <div class="h-48 bg-slate-800 overflow-hidden relative">
-                            <!-- Stable Wikimedia Image for HK Science Park -->
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hong_Kong_Science_Park_Phase_3_201606.jpg/1280px-Hong_Kong_Science_Park_Phase_3_201606.jpg" alt="HKSTP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="h-48 bg-slate-800 overflow-hidden relative cursor-pointer" onclick="playVideo(this, 'ex6sYSDMd2E')" role="button" tabindex="0">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.X6CwOgoowBYxzSU6Unc8TwHaE8?w=474&h=379&c=7&p=0" alt="HKSTP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center play-overlay">
+                                <div class="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white play-icon">
+                                    <span class="text-white text-lg ml-1">▶</span>
+                                </div>
+                            </div>
                             <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
                                 <h3 class="text-xl font-bold text-white">HKSTP (홍콩 사이언스파크)</h3>
                             </div>
                         </div>
                         <div class="p-6">
-                            <p class="text-slate-600 text-sm mb-4">홍콩 최대의 R&D 혁신 허브. 글로벌 스타트업 육성 프로그램과 산학협력 구조를 벤치마킹합니다.</p>
+                            <p class="text-slate-600 text-sm mb-4">홍콩 최대의 R&D 혁신 허브. 글로벌 스타트업 육성 및 산학협력 모델을 벤치마킹합니다.</p>
                             <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded">Incubating</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded">Global</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Media Section (City Preview) -->
         <section id="media" class="py-20 bg-slate-900 text-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
@@ -207,17 +197,9 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                    <!-- Video 1: Shenzhen (2. Thumbnail Error Handling) -->
                     <div class="bg-slate-800 p-2 rounded-xl hover:bg-slate-700 transition-colors">
-                        <!-- 7. Accessibility: role="button", tabindex="0" -->
-                        <div class="relative aspect-video rounded-lg overflow-hidden cursor-pointer group" 
-                             onclick="playVideo(this, 'z5e5AVfxW78')" 
-                             role="button" 
-                             tabindex="0" 
-                             onkeypress="if(event.key === 'Enter') playVideo(this, 'z5e5AVfxW78')">
-                            <img src="https://img.youtube.com/vi/z5e5AVfxW78/maxresdefault.jpg" 
-                                 onerror="this.onerror=null;this.src='https://img.youtube.com/vi/z5e5AVfxW78/hqdefault.jpg';" 
-                                 alt="Shenzhen Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        <div class="relative aspect-video rounded-lg overflow-hidden cursor-pointer group" onclick="playVideo(this, 'z5e5AVfxW78')" role="button" tabindex="0">
+                            <img src="https://img.youtube.com/vi/z5e5AVfxW78/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/z5e5AVfxW78/hqdefault.jpg';" alt="Shenzhen Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center play-overlay">
                                 <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white play-icon">
                                     <span class="text-white text-3xl ml-1">▶</span>
@@ -228,16 +210,9 @@
                         <p class="text-center text-sm text-slate-300 mt-3 font-medium">▲ 심천: 하드웨어의 실리콘밸리</p>
                     </div>
                     
-                    <!-- Video 2: Hong Kong -->
                     <div class="bg-slate-800 p-2 rounded-xl hover:bg-slate-700 transition-colors">
-                        <div class="relative aspect-video rounded-lg overflow-hidden cursor-pointer group" 
-                             onclick="playVideo(this, 'X2PgJkXdzks')"
-                             role="button" 
-                             tabindex="0"
-                             onkeypress="if(event.key === 'Enter') playVideo(this, 'X2PgJkXdzks')">
-                            <img src="https://img.youtube.com/vi/X2PgJkXdzks/maxresdefault.jpg" 
-                                 onerror="this.onerror=null;this.src='https://img.youtube.com/vi/X2PgJkXdzks/hqdefault.jpg';" 
-                                 alt="Hong Kong Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        <div class="relative aspect-video rounded-lg overflow-hidden cursor-pointer group" onclick="playVideo(this, 'X2PgJkXdzks')" role="button" tabindex="0">
+                            <img src="https://img.youtube.com/vi/X2PgJkXdzks/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/X2PgJkXdzks/hqdefault.jpg';" alt="Hong Kong Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center play-overlay">
                                 <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white play-icon">
                                     <span class="text-white text-3xl ml-1">▶</span>
@@ -251,64 +226,57 @@
             </div>
         </section>
 
-        <!-- Timeline Section (3. Tab Summaries) -->
         <section id="timeline" class="py-20 bg-slate-50">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-2">4박 5일 상세 일정</h2>
                 <p class="text-center text-slate-500 text-sm mb-10">※ 현지 사정 및 기업 보안 정책에 따라 일부 일정은 변경될 수 있습니다.</p>
                 
-                <!-- Tabs with Summaries -->
-                <div class="max-w-5xl mx-auto bg-white rounded-t-2xl shadow-sm border-b overflow-hidden flex flex-wrap">
-                    <button class="tab-btn active flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 transition-colors" data-tab="day1">
+                <div class="max-w-6xl mx-auto bg-white rounded-t-2xl shadow-sm border-b overflow-hidden flex flex-wrap text-center">
+                    <button class="tab-btn active flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 group" data-tab="day1">
+                        <span class="block text-xs font-bold text-slate-400 group-hover:text-slate-600 mb-1">출국/OT</span>
                         <span class="block text-sm md:text-base font-bold">DAY 1</span>
-                        <span class="tab-desc block text-xs font-normal text-slate-500 mt-1">출국/오리엔테이션</span>
                     </button>
-                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 transition-colors" data-tab="day2">
+                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 group" data-tab="day2">
+                        <span class="block text-xs font-bold text-slate-400 group-hover:text-slate-600 mb-1">Big Tech</span>
                         <span class="block text-sm md:text-base font-bold">DAY 2</span>
-                        <span class="tab-desc block text-xs font-normal text-slate-500 mt-1">텐센트/DJI</span>
                     </button>
-                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 transition-colors" data-tab="day3">
+                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 group" data-tab="day3">
+                        <span class="block text-xs font-bold text-slate-400 group-hover:text-slate-600 mb-1">R&D혁신</span>
                         <span class="block text-sm md:text-base font-bold text-emerald-600">DAY 3</span>
-                        <span class="tab-desc block text-xs font-normal text-slate-500 mt-1">화웨이/대학</span>
                     </button>
-                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 transition-colors" data-tab="day4">
+                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 group" data-tab="day4">
+                        <span class="block text-xs font-bold text-slate-400 group-hover:text-slate-600 mb-1">홍콩 I&T</span>
                         <span class="block text-sm md:text-base font-bold text-indigo-600">DAY 4</span>
-                        <span class="tab-desc block text-xs font-normal text-slate-500 mt-1">홍콩이동/HKSTP</span>
                     </button>
-                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 transition-colors" data-tab="day5">
+                    <button class="tab-btn flex-1 py-3 px-2 border-b-4 border-transparent hover:bg-slate-50 group" data-tab="day5">
+                        <span class="block text-xs font-bold text-slate-400 group-hover:text-slate-600 mb-1">창업/귀국</span>
                         <span class="block text-sm md:text-base font-bold">DAY 5</span>
-                        <span class="tab-desc block text-xs font-normal text-slate-500 mt-1">Cyberport/귀국</span>
                     </button>
                 </div>
 
-                <!-- Content -->
-                <div class="max-w-5xl mx-auto bg-white rounded-b-2xl shadow-xl p-8 md:p-12 min-h-[400px] border border-slate-100">
+                <div class="max-w-6xl mx-auto bg-white rounded-b-2xl shadow-xl p-6 md:p-12 min-h-[400px] border border-slate-100">
                     <div id="tabs-content"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Checklist & Notes -->
         <section id="checklist" class="py-20 bg-white">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold text-center mb-8">준비물 & MY 노트</h2>
                 <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-                    <!-- Checklist -->
                     <div class="bg-slate-50 p-6 rounded-2xl shadow-lg border border-slate-200">
                         <h3 class="text-xl font-bold mb-4 text-emerald-700"><i class="fa-solid fa-clipboard-check"></i> 필수 준비물</h3>
                         <div id="checklist-container" class="space-y-3 h-[400px] overflow-y-auto pr-2">
-                            <!-- Items inserted by JS -->
-                        </div>
+                            </div>
                         <div class="mt-4 text-center">
-                            <button onclick="resetChecklist()" class="text-xs text-slate-400 underline">초기화</button>
+                            <button onclick="resetChecklist()" class="text-xs text-slate-400 underline">체크리스트 초기화</button>
                         </div>
                     </div>
-                    <!-- Note (4. Privacy Notice) -->
-                    <div>
-                        <h3 class="text-xl font-bold mb-1 text-yellow-600 px-2"><i class="fa-solid fa-pen-to-square"></i> MY 리플렉션 노트</h3>
-                        <p class="text-xs text-slate-400 mb-4 px-2">※ 작성 내용은 본인 기기에만 저장되며 서버로 전송되지 않습니다.</p>
+                    <div id="mynote">
+                        <h3 class="text-xl font-bold mb-2 text-yellow-600 px-2"><i class="fa-solid fa-pen-to-square"></i> MY 리플렉션 노트</h3>
+                        <p class="text-xs text-slate-400 px-2 mb-3">※ 작성된 내용은 본인 기기에만 저장되며 서버로 전송되지 않습니다.</p>
                         <div class="relative">
-                            <textarea id="travel-memo" class="notepad w-full h-[450px] p-6 text-lg text-slate-800 resize-none rounded-lg" placeholder="오늘의 기업 탐방에서 얻은 인사이트를 기록하세요.&#10;질문 리스트나 현지 연락처를 적어두셔도 좋습니다."></textarea>
+                            <textarea id="travel-memo" class="notepad w-full h-[400px] p-6 text-lg text-slate-800 resize-none rounded-lg" placeholder="오늘의 기업 탐방에서 얻은 인사이트를 기록하세요.&#10;질문 리스트나 현지 연락처를 적어두셔도 좋습니다."></textarea>
                             <div id="save-status" class="absolute bottom-4 right-4 text-xs text-slate-500 bg-white/50 px-2 py-1 rounded">자동 저장 대기중...</div>
                         </div>
                     </div>
@@ -316,7 +284,6 @@
             </div>
         </section>
 
-        <!-- Emergency -->
         <section class="py-12 bg-slate-100 border-t">
             <div class="container mx-auto px-4 text-center">
                 <h2 class="text-xl font-bold mb-6">비상 연락망 (Emergency)</h2>
@@ -358,9 +325,8 @@
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            // --- 1. D-Day Logic (Enhanced with Try-Catch) ---
+            // --- D-Day Logic (Target: Jan 12, 2026) ---
             const dDayBadge = document.getElementById('d-day-badge');
-            
             try {
                 const today = new Date(); today.setHours(0,0,0,0);
                 const startDate = new Date('2026-01-12T00:00:00'); startDate.setHours(0,0,0,0);
@@ -369,18 +335,18 @@
                 if (today < startDate) {
                     const diff = Math.ceil((startDate - today) / (1000 * 60 * 60 * 24));
                     dDayBadge.innerText = `D-${diff}`;
+                    dDayBadge.className = "bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-lg shadow-md";
                 } else if (today <= endDate) {
                     const diff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)) + 1;
                     dDayBadge.innerText = `Day ${diff}`;
-                    dDayBadge.className = "bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce";
+                    dDayBadge.className = "bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-lg animate-bounce";
                 } else {
                     dDayBadge.innerText = "탐방 종료";
-                    dDayBadge.className = "bg-slate-500 text-white text-xs font-bold px-2 py-1 rounded-full";
+                    dDayBadge.className = "bg-slate-500 text-white text-xs font-bold px-3 py-1 rounded-lg";
                 }
             } catch (e) {
-                // Fallback in case of error
-                dDayBadge.innerText = "D-?";
-                dDayBadge.className = "bg-slate-500 text-white text-xs font-bold px-2 py-1 rounded-full";
+                console.error("D-Day Error", e);
+                // 유지: 초기 Fallback 상태
             }
 
             // --- Itinerary Data (Shenzhen & HK) ---
@@ -454,7 +420,6 @@
                 tabsContainer.innerHTML = content;
             }
 
-            // 2. Simplified Tab Logic
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     tabButtons.forEach(btn => btn.classList.remove('active'));
@@ -476,7 +441,7 @@
             items.forEach(item => {
                 const div = document.createElement('div');
                 div.className = 'flex items-center p-3 bg-white rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors shadow-sm';
-                div.innerHTML = `<input type="checkbox" id="${item.id}" class="h-5 w-5 text-emerald-600 rounded focus:ring-emerald-500 cursor-pointer"><label for="${item.id}" class="ml-3 text-slate-700 font-medium cursor-pointer flex-grow">${item.t}</label>`;
+                div.innerHTML = `<input type="checkbox" id="${item.id}" class="h-5 w-5 text-emerald-600 rounded focus:ring-emerald-500 cursor-pointer"><label for="${item.id}" class="ml-3 text-slate-700 font-medium cursor-pointer flex-grow select-none">${item.t}</label>`;
                 checklistContainer.appendChild(div);
                 
                 const box = div.querySelector('input');
