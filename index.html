@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 🚨 Google Analytics (GA4) - Tourmaker 통합 관리 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLH9GD9SVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JLH9GD9SVR');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 강원대학교 글로벌 패스파인더: Shenzhen & HK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f0f4f8; color: #1e293b; }
+        
+        /* Hero Background: Shenzhen Cyberpunk Vibe */
+        .hero-bg-shenzhen { 
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(16, 185, 129, 0.2)), url('https://images.unsplash.com/photo-1552912443-4dc97925e05c?q=80&w=2071&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        } 
+        
+        /* Interactive Elements */
+        .nav-link { transition: all 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #0ea5e9; border-bottom-color: #0ea5e9; }
+        
+        .tab-btn { transition: all 0.3s; }
+        .tab-btn.active { background-color: #0369a1; color: white; border-color: #0369a1; }
+        
+        html { scroll-behavior: smooth; }
+        .hover-zoom { transition: transform 0.3s ease; }
+        .hover-zoom:hover { transform: scale(1.02); }
+
+        /* Play Button Overlay */
+        .play-overlay { background: rgba(0, 0, 0, 0.4); transition: all 0.3s; }
+        .group:hover .play-overlay { background: rgba(0, 0, 0, 0.2); }
+        .play-icon { transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .group:hover .play-icon { transform: scale(1.2); }
+
+        /* Notepad Style */
+        .notepad {
+            background-color: #fef9c3;
+            background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 100% 2rem;
+            line-height: 2rem;
+            border-left: 4px solid #ef4444;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .notepad:focus { outline: none; background-color: #fef08a; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <!-- Tourmaker Logo -->
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker Logo" class="h-8 w-auto">
+                    <!-- D-Day Badge -->
+                    <div id="d-day-badge" class="bg-sky-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-md animate-pulse">
+                        Calculating...
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div class="md:hidden">
+                    <a href="#mynote" class="text-yellow-600 font-bold text-sm mr-2"><i class="fa-solid fa-pen-to-square"></i> 노트</a>
+                </div>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 text-sm font-medium">
+                        <a href="#home" class="nav-link px-3 py-2 border-b-2 border-transparent active">소개</a>
+                        <a href="#highlight" class="nav-link px-3 py-2 border-b-2 border-transparent">Core Tech</a>
+                        <a href="#campus" class="nav-link px-3 py-2 border-b-2 border-transparent">Global Campus</a>
+                        <a href="#media" class="nav-link px-3 py-2 border-b-2 border-transparent">현장 영상</a>
+                        <a href="#timeline" class="nav-link px-3 py-2 border-b-2 border-transparent">일정표</a>
+                        <a href="#checklist" class="nav-link px-3 py-2 border-b-2 border-transparent text-indigo-600 font-bold">체크리스트</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg-shenzhen text-white text-center flex items-center justify-center min-h-[85vh] relative">
+            <div class="container mx-auto px-4 z-10">
+                <p class="text-lg md:text-xl font-semibold text-emerald-400 mb-2 tracking-widest uppercase">2026 KNU Global Pathfinder</p>
+                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight drop-shadow-2xl">
+                    SHENZHEN <span class="text-sky-400">&</span> HONG KONG<br>
+                    <span class="text-2xl md:text-4xl font-light text-slate-200 mt-2 block">GBA 혁신과 글로벌 I&T의 미래를 걷다</span>
+                </h1>
+                
+                <div class="inline-block bg-white/95 p-4 rounded-xl shadow-lg mb-8 transform hover:scale-105 transition-transform">
+                    <img src="https://wwwk.kangwon.ac.kr/site/www/images/common/logo.png" alt="강원대학교 로고" class="h-12 w-auto">
+                </div>
+
+                <div class="mt-4 max-w-4xl mx-auto bg-slate-900/70 backdrop-blur-md p-6 rounded-2xl border border-slate-700">
+                    <div class="grid md:grid-cols-3 gap-4 text-left">
+                        <div class="border-l-4 border-emerald-500 pl-4">
+                            <h3 class="text-emerald-400 font-bold text-sm">Shenzhen Innovation</h3>
+                            <p class="text-sm text-slate-300">텐센트, DJI, 화웨이 등<br>글로벌 빅테크 현장 탐방</p>
+                        </div>
+                        <div class="border-l-4 border-sky-500 pl-4">
+                            <h3 class="text-sky-400 font-bold text-sm">AI & Manufacturing</h3>
+                            <p class="text-sm text-slate-300">후아창베이 하드웨어 생태계와<br>남방과기대 R&D 혁신</p>
+                        </div>
+                        <div class="border-l-4 border-indigo-500 pl-4">
+                            <h3 class="text-indigo-400 font-bold text-sm">Global I&T Hub</h3>
+                            <p class="text-sm text-slate-300">홍콩 사이언스파크(HKSTP) 및<br>과기대(HKUST) 글로벌 협업</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Tech & Campus Highlights -->
+        <section id="highlight" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <span class="text-emerald-600 font-bold tracking-wider uppercase">Innovation Ecosystem</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2">심천·홍콩 혁신 클러스터 탐방</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <!-- Card 1: Tencent -->
+                    <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
+                        <div class="h-48 bg-slate-800 overflow-hidden relative">
+                            <img src="https://images.adsttc.com/media/images/5b84/ad09/f197/cc71/3e00/029c/large_jpg/Tencent_Seafront_Towers_01.jpg?1535421695" alt="Tencent HQ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
+                                <h3 class="text-xl font-bold text-white">Tencent (텐센트)</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-slate-600 text-sm mb-4">아시아 최대 테크 기업. 위챗(WeChat) 플랫폼 생태계와 AI 서비스 상용화 전략을 심천 본사에서 확인합니다.</p>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">Platform</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">AI Tech</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: DJI -->
+                    <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
+                        <div class="h-48 bg-slate-800 overflow-hidden relative">
+                            <img src="https://www.fosterandpartners.com/media/2635950/fp_6602_dji_hero.jpg" alt="DJI Sky City" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
+                                <h3 class="text-xl font-bold text-white">DJI Sky City</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-slate-600 text-sm mb-4">세계 드론 시장의 70%를 장악한 DJI의 혁신적인 신사옥 Sky City. 로보틱스와 드론 산업의 미래를 조망합니다.</p>
+                            <span class="bg-slate-200 text-slate-800 text-xs font-bold px-2 py-1 rounded">Robotics</span>
+                            <span class="bg-slate-200 text-slate-800 text-xs font-bold px-2 py-1 rounded">Drone</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: HKSTP -->
+                    <div class="bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
+                        <div class="h-48 bg-slate-800 overflow-hidden relative">
+                            <img src="https://www.hkstp.org/media/10495/hkstp_kv_1920x1080.jpg" alt="HKSTP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full p-4">
+                                <h3 class="text-xl font-bold text-white">HKSTP (홍콩 사이언스파크)</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-slate-600 text-sm mb-4">홍콩 최대의 R&D 혁신 허브. 글로벌 스타트업 육성 프로그램과 산학협력 구조를 벤치마킹합니다.</p>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded">Incubating</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded">Global</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="py-20 bg-slate-900 text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold">미리 만나는 현장 (Preview)</h2>
+                    <p class="text-slate-400 mt-2">하드웨어의 실리콘밸리 '심천'과 아시아 금융/IT 허브 '홍콩'</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Video 1: Shenzhen -->
+                    <div class="bg-slate-800 p-2 rounded-xl">
+                        <div class="relative aspect-video rounded-lg overflow-hidden cursor-pointer group" onclick="playVideo(this, 'hQz9oJ7qQjM')">
+                            <img src="https://img.youtube.com/vi/hQz9oJ7qQjM/maxresdefault.jpg" alt="Shenzhen Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute inset-0 flex items-center justify-center play-overlay">
+                                <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white play-icon">
+                                    <span class="text-white text-3xl ml-1">▶</span>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-4 left-4 font-bold text-lg">SHENZHEN: The Future City</div>
+                        </div>
+                    </div>
+                    <!-- Video 2: Hong Kong -->
+                    <div class="bg-slate-800 p-2 rounded-xl">
+                        <div class="relative aspect-video rounded-lg overflow-hidden cursor-pointer group" onclick="playVideo(this, '3w3q_8J3kks')">
+                            <img src="https://img.youtube.com/vi/3w3q_8J3kks/maxresdefault.jpg" alt="Hong Kong Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute inset-0 flex items-center justify-center play-overlay">
+                                <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white play-icon">
+                                    <span class="text-white text-3xl ml-1">▶</span>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-4 left-4 font-bold text-lg">HONG KONG: Cinematic Vibe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-2">4박 5일 상세 일정</h2>
+                <p class="text-center text-slate-500 text-sm mb-10">※ 현지 사정 및 기업 보안 정책에 따라 일부 일정은 변경될 수 있습니다.</p>
+                
+                <!-- Tabs -->
+                <div class="max-w-5xl mx-auto bg-white rounded-t-2xl shadow-sm border-b overflow-hidden flex flex-wrap">
+                    <button class="tab-btn active flex-1 py-4 font-bold text-sm md:text-base border-b-4 border-transparent hover:bg-slate-50" data-tab="day1">DAY 1</button>
+                    <button class="tab-btn flex-1 py-4 font-bold text-sm md:text-base border-b-4 border-transparent hover:bg-slate-50" data-tab="day2">DAY 2</button>
+                    <button class="tab-btn flex-1 py-4 font-bold text-sm md:text-base border-b-4 border-transparent hover:bg-slate-50 text-emerald-600" data-tab="day3">DAY 3</button>
+                    <button class="tab-btn flex-1 py-4 font-bold text-sm md:text-base border-b-4 border-transparent hover:bg-slate-50 text-indigo-600" data-tab="day4">DAY 4</button>
+                    <button class="tab-btn flex-1 py-4 font-bold text-sm md:text-base border-b-4 border-transparent hover:bg-slate-50" data-tab="day5">DAY 5</button>
+                </div>
+
+                <!-- Content -->
+                <div class="max-w-5xl mx-auto bg-white rounded-b-2xl shadow-xl p-8 md:p-12 min-h-[400px] border border-slate-100">
+                    <div id="tabs-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checklist & Notes -->
+        <section id="checklist" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">준비물 & MY 노트</h2>
+                <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    <!-- Checklist -->
+                    <div class="bg-slate-50 p-6 rounded-2xl shadow-lg border border-slate-200">
+                        <h3 class="text-xl font-bold mb-4 text-emerald-700"><i class="fa-solid fa-clipboard-check"></i> 필수 준비물</h3>
+                        <div id="checklist-container" class="space-y-3 h-[400px] overflow-y-auto pr-2">
+                            <!-- Items inserted by JS -->
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button onclick="resetChecklist()" class="text-xs text-slate-400 underline">초기화</button>
+                        </div>
+                    </div>
+                    <!-- Note -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-yellow-600 px-2"><i class="fa-solid fa-pen-to-square"></i> MY 리플렉션 노트</h3>
+                        <div class="relative">
+                            <textarea id="travel-memo" class="notepad w-full h-[450px] p-6 text-lg text-slate-800 resize-none rounded-lg" placeholder="오늘의 기업 탐방에서 얻은 인사이트를 기록하세요.&#10;질문 리스트나 현지 연락처를 적어두셔도 좋습니다."></textarea>
+                            <div id="save-status" class="absolute bottom-4 right-4 text-xs text-slate-500 bg-white/50 px-2 py-1 rounded">자동 저장 대기중...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency -->
+        <section class="py-12 bg-slate-100 border-t">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-xl font-bold mb-6">비상 연락망 (Emergency)</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <p class="text-xs text-slate-500 font-bold">심천(중국) 긴급</p>
+                        <p class="text-lg font-bold text-red-600">110 (경찰)</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <p class="text-xs text-slate-500 font-bold">홍콩 긴급</p>
+                        <p class="text-lg font-bold text-red-600">999</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-sm border-2 border-indigo-100">
+                        <p class="text-xs text-slate-500 font-bold">투어메이커 총괄</p>
+                        <a href="tel:01042494026" class="text-base font-bold text-blue-600">조혁 이사</a>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-sm border-2 border-indigo-100">
+                        <p class="text-xs text-slate-500 font-bold">현지 인솔</p>
+                        <a href="tel:01094437881" class="text-base font-bold text-blue-600">이재명 대표</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center">
+        <div class="container mx-auto px-4">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi0YSsOZ847rEAjEI5w8uFj7k66WmuO18z2dZuvC5dR80SjnRbjOSrWRmqAP3CrBLPQgWQloK8Ic9n15Kjj879TNlCy8dGxyArnbDnorHB9VhqP-9dqOAb0Dnb0TOf67vZ94O-z_NQ0KUCqv7Ig-SEEWE4yESfTvJXwTgSn5wj03vT048UiCyMyl-hF-6w" alt="Tourmaker Footer Logo" class="h-10 mx-auto mb-4 opacity-70 hover:opacity-100 transition-opacity">
+            <p class="text-sm">성공적인 글로벌 패스파인더 여정을 응원합니다.</p>
+            <p class="text-xs mt-2 opacity-50">&copy; 2026 Tourmaker. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Video Logic ---
+        function playVideo(element, videoId) {
+            element.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" title="YouTube video" class="w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            element.classList.remove('cursor-pointer', 'group');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- D-Day Logic (Target: Jan 12, 2026) ---
+            const dDayBadge = document.getElementById('d-day-badge');
+            const today = new Date(); today.setHours(0,0,0,0);
+            const startDate = new Date('2026-01-12T00:00:00'); startDate.setHours(0,0,0,0);
+            const endDate = new Date('2026-01-16T00:00:00'); endDate.setHours(0,0,0,0);
+
+            if (today < startDate) {
+                const diff = Math.ceil((startDate - today) / (1000 * 60 * 60 * 24));
+                dDayBadge.innerText = `D-${diff}`;
+            } else if (today <= endDate) {
+                const diff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24)) + 1;
+                dDayBadge.innerText = `Day ${diff}`;
+                dDayBadge.className = "bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce";
+            } else {
+                dDayBadge.innerText = "탐방 종료";
+                dDayBadge.className = "bg-slate-500 text-white text-xs font-bold px-2 py-1 rounded-full";
+            }
+
+            // --- Itinerary Data (Shenzhen & HK) ---
+            const scheduleData = {
+                day1: {
+                    title: 'DAY 1 | 출국 및 오리엔테이션',
+                    items: [
+                        { time: '오전', desc: '인천공항 집결 및 출국 수속', icon: '✈️' },
+                        { time: '오후', desc: '홍콩 도착 ➔ <span class="text-emerald-600 font-bold">심천 이동 (육로/철도)</span> ➔ 호텔 체크인', icon: '🚆' },
+                        { time: '저녁', desc: '<strong>오리엔테이션 & 미션 브리핑</strong><br><span class="text-sm text-slate-500">안전/결제/통신 점검 및 조별 질문 리스트 배포</span>', icon: '📝' },
+                        { time: '야간', desc: '심천 도심 야경 및 컨디션 조절 (선택)', icon: '🌙' }
+                    ]
+                },
+                day2: {
+                    title: 'DAY 2 | 심천 Big Tech 인사이트 (난산 권역)',
+                    items: [
+                        { time: '10:00', desc: '<strong class="text-blue-700 text-lg">Tencent (텐센트) 본사</strong><br>플랫폼 생태계 및 AI 전략 브리핑 (내부/외부 투어)', icon: '🏢' },
+                        { time: '중식', desc: '난산 테크파크 주변 현지식', icon: '🥢' },
+                        { time: '14:00', desc: '<strong class="text-slate-800">DJI HQ (Sky City)</strong><br>드론/로보틱스 산업 인사이트 및 건축 미학 탐방', icon: '🚁' },
+                        { time: '18:00', desc: '<strong class="text-emerald-700">후아창베이 전자상가 리서치</strong><br>부품에서 제품화까지, 하드웨어 밸류체인 관찰', icon: '🔋' },
+                        { time: '20:30', desc: '팀별 10분 리플렉션 (MY 노트 정리)', icon: '🗣️' }
+                    ]
+                },
+                day3: {
+                    title: 'DAY 3 | R&D 캠퍼스 기반 혁신',
+                    items: [
+                        { time: '09:30', desc: '<strong class="text-red-700">Huawei (화웨이) 반톈 캠퍼스</strong><br>통신/클라우드 인프라 및 R&D 조직 문화 탐방', icon: '📡' },
+                        { time: '중식', desc: '현지식', icon: '🍚' },
+                        { time: '14:00', desc: '<strong class="text-emerald-700">SUSTech (남방과기대) / SZU</strong><br>심천 대학 캠퍼스 방문 및 현지 학생 교류 세션', icon: '🎓' },
+                        { time: '18:00', desc: '<strong>전문가 미니 특강 (GBA 스타트업 생태계)</strong><br><span class="text-sm text-slate-500">※ 현지 사정에 따라 변경 가능</span>', icon: '🎙️' },
+                        { time: '야간', desc: '내일 홍콩 세션 질문지 정리 및 휴식', icon: '💤' }
+                    ]
+                },
+                day4: {
+                    title: 'DAY 4 | 홍콩 I&T 허브 + 글로벌 캠퍼스',
+                    items: [
+                        { time: '09:00', desc: '심천 출발 ➔ <span class="text-indigo-600 font-bold">홍콩 이동 (Cross-border)</span>', icon: '🛂' },
+                        { time: '13:30', desc: '<strong class="text-indigo-700 text-lg">HKSTP (홍콩 사이언스파크)</strong><br>글로벌 액셀러레이션 및 산학협력 모델 관찰', icon: '🔬' },
+                        { time: '저녁', desc: '홍콩 도심 문화 탐방 (빅토리아 하버 야경)', icon: '🌃' },
+                        { time: '야간', desc: '안전 브리핑 (2인 1조 이동 원칙)', icon: '⚠️' }
+                    ]
+                },
+                day5: {
+                    title: 'DAY 5 | AI/창업 거점 + 귀국',
+                    items: [
+                        { time: '09:30', desc: '<strong class="text-sky-600">Cyberport (사이버포트)</strong><br>디지털 테크 허브 & AI 스타트업 지원 현장', icon: '💻' },
+                        { time: '14:00', desc: '<strong class="text-yellow-600">HKUST (홍콩 과기대)</strong><br>캠퍼스 투어 및 교류 세션 (일정 조율 시)', icon: '🏫' },
+                        { time: '오후', desc: '홍콩 공항 이동 및 귀국', icon: '✈️' }
+                    ]
+                }
+            };
+
+            // --- Tab Logic ---
+            const tabsContainer = document.getElementById('tabs-content');
+            const tabButtons = document.querySelectorAll('.tab-btn');
+
+            function renderTabContent(day) {
+                const data = scheduleData[day];
+                let content = `<div class="animate-fade-in"><h3 class="text-xl font-bold mb-6 text-slate-800 border-b pb-3">${data.title}</h3><ul class="space-y-6">`;
+                data.items.forEach(item => {
+                    content += `
+                        <li class="flex items-start group">
+                            <span class="text-2xl mr-4 w-8 text-center group-hover:scale-110 transition-transform">${item.icon}</span>
+                            <div>
+                                <span class="inline-block bg-slate-100 text-slate-600 text-xs font-bold px-2 py-1 rounded mb-1">${item.time}</span>
+                                <p class="text-slate-700 text-base leading-relaxed">${item.desc}</p>
+                            </div>
+                        </li>`;
+                });
+                content += '</ul></div>';
+                tabsContainer.innerHTML = content;
+            }
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active', 'bg-sky-700', 'text-white'));
+                    button.classList.add('active');
+                    renderTabContent(button.dataset.tab);
+                });
+            });
+            renderTabContent('day1'); // Initial Render
+
+            // --- Checklist Logic (Local Storage) ---
+            const checklistContainer = document.getElementById('checklist-container');
+            const items = [
+                {id: 'p1', t: '여권 (유효기간 6개월↑)'}, {id: 'p2', t: '멀티 어댑터 (홍콩 3구/중국 2구)'},
+                {id: 'p3', t: '알리페이/옥토퍼스 카드'}, {id: 'p4', t: 'eSIM/로밍 (중국+홍콩 통합)'},
+                {id: 'p5', t: '비상약 (소화제/진통제)'}, {id: 'p6', t: '보조배터리 (기내 반입)'},
+                {id: 'p7', t: '계절 의류 (가벼운 겉옷)'}, {id: 'p8', t: '세면도구 (호텔 미제공 대비)'}
+            ];
+
+            items.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'flex items-center p-3 bg-white rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors shadow-sm';
+                div.innerHTML = `<input type="checkbox" id="${item.id}" class="h-5 w-5 text-emerald-600 rounded focus:ring-emerald-500 cursor-pointer"><label for="${item.id}" class="ml-3 text-slate-700 font-medium cursor-pointer flex-grow">${item.t}</label>`;
+                checklistContainer.appendChild(div);
+                
+                const box = div.querySelector('input');
+                box.checked = localStorage.getItem('sz_hk_check_' + item.id) === 'true';
+                box.addEventListener('change', (e) => localStorage.setItem('sz_hk_check_' + item.id, e.target.checked));
+            });
+
+            window.resetChecklist = () => {
+                if(confirm('체크리스트를 초기화 하시겠습니까?')) {
+                    items.forEach(i => { localStorage.removeItem('sz_hk_check_' + i.id); document.getElementById(i.id).checked = false; });
+                }
+            };
+
+            // --- Memo Logic ---
+            const memo = document.getElementById('travel-memo');
+            const status = document.getElementById('save-status');
+            memo.value = localStorage.getItem('sz_hk_memo') || '';
+            memo.addEventListener('input', () => {
+                localStorage.setItem('sz_hk_memo', memo.value);
+                status.innerText = "저장됨 " + new Date().toLocaleTimeString();
+                status.classList.add('text-emerald-600');
+                setTimeout(() => status.classList.remove('text-emerald-600'), 1000);
+            });
+        });
+    </script>
+</body>
+</html>
